@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac5aa7ea3317932de7982c38fde946e3",
+    "revision": "e6c440fd40be84c3aaddb4b1ffa6f77b",
     "url": "/voice-recognition/index.html"
   },
   {
-    "revision": "406d15f1bea5d82b934f",
+    "revision": "594e07060d68b9c3f2c0",
     "url": "/voice-recognition/static/css/main.78c9f435.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/voice-recognition/static/js/2.c2b9aa4d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "406d15f1bea5d82b934f",
-    "url": "/voice-recognition/static/js/main.654cf5a4.chunk.js"
+    "revision": "594e07060d68b9c3f2c0",
+    "url": "/voice-recognition/static/js/main.0022bde2.chunk.js"
   },
   {
     "revision": "f60b87d050e2f0eb4e68",
