@@ -33,8 +33,8 @@ export default function Voice() {
 		const speech = new SpeechSynthesisUtterance()
 		speech.text = transcript
 		speech.volume = 1
-		speech.rate = 0.4
-		speech.pitch = 2
+		speech.rate = 0.8
+		speech.pitch = 1
 		window.speechSynthesis.speak(speech)
 	}
 
