@@ -1,0 +1,238 @@
+input {
+  display: none;
+}
+
+.mic-container {
+  background: linear-gradient(186deg, #299dff 36%, #3656ff 76%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.mic-container .charger {
+  padding-top: 120px;
+}
+
+.mic-container .circle {
+  fill: none;
+}
+
+.mic-container .loader {
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-linecap: round;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.mic-container .microphone {
+  position: absolute;
+  margin-top: 157px;
+}
+
+.mic-container .microphone .fa-microphone {
+  font-size: 44px;
+}
+
+.mic-container .dotWrapper {
+  margin-top: 171px;
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.mic-container .dotWrapper .fa-circle {
+  position: absolute;
+  width: 10px;
+}
+
+.mic-container .dotWrapper .fa-circle:nth-child(2) {
+  right: 0;
+}
+
+.mic-container .dotWrapper .fa-circle:nth-child(3) {
+  right: 20px;
+}
+
+input:checked ~ .mic-container .loader {
+  -webkit-animation: line 5s linear infinite, spin 10s linear infinite;
+          animation: line 5s linear infinite, spin 10s linear infinite;
+  stroke-dasharray: 280;
+}
+
+input:checked ~ .mic-container .microphone {
+  -webkit-animation: microphone 0.5s ease-in-out both;
+          animation: microphone 0.5s ease-in-out both;
+}
+
+input:checked ~ .mic-container .dotWrapper {
+  opacity: 1;
+  -webkit-animation: dots 1s ease-in-out both;
+          animation: dots 1s ease-in-out both;
+}
+
+input:checked ~ .mic-container .dotWrapper .fa-circle {
+  -webkit-animation: dot 1s ease-in-out infinite;
+          animation: dot 1s ease-in-out infinite;
+}
+
+input:checked ~ .mic-container .dotWrapper .fa-circle:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+input:checked ~ .mic-container .dotWrapper .fa-circle:nth-child(3) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+@-webkit-keyframes line {
+  0% {
+    stroke-dashoffset: 1120;
+  }
+  100% {
+    stroke-dashoffset: 560;
+  }
+}
+
+@keyframes line {
+  0% {
+    stroke-dashoffset: 1120;
+  }
+  100% {
+    stroke-dashoffset: 560;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(-90deg) translate3d(0, 0, 0);
+            transform: rotate(-90deg) translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(270deg) translate3d(0, 0, 0);
+            transform: rotate(270deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(-90deg) translate3d(0, 0, 0);
+            transform: rotate(-90deg) translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(270deg) translate3d(0, 0, 0);
+            transform: rotate(270deg) translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes microphone {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes microphone {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes dots {
+  0%,
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes dots {
+  0%,
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes dot {
+  0%,
+  100% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+  }
+}
+
+@keyframes dot {
+  0%,
+  100% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes button {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=Microphone.css.map */
